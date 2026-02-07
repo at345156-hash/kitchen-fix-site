@@ -1,10 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>RO Water Purifier Service & Repair in Delhi | RO Service Near Me – Kitchen Fix</title>
-  <meta name="description" content="Kitchen Fix provides RO water purifier service and repair in Delhi. RO service near me, RO repair near me, RO water purifier service near me, RO installation near me, RO water purifier AMC and RO purifier maintenance service at home. Call 9643986012 for doorstep RO service in Delhi.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>RO Service Near Me in Delhi | RO Water Purifier Repair, Installation & AMC – Kitchen Fix</title>
+  <meta name="description" content="Kitchen Fix offers RO service near me in Delhi – RO water purifier service, RO repair, RO installation near me, water purifier service near me, RO water purifier AMC and RO purifier maintenance service at home for Kent, Aquaguard, Livpure, Pureit and more. Call 9643986012." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Basic styling so this page looks unique -->
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --bg-card: #020617;
+      --bg-deep: #0f172a;
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.12);
+      --accent-yellow: #fbbf24;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-soft: #1f2937;
+      --max-width: 1024px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0ea5e9 0, #020617 55%, #020617 100%);
+      color: var(--text-main);
+    }
+
+    a {
+      color: var(--accent-yellow);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: rgba(2, 6, 23, 0.9);
+      border-bottom: 1px solid #1f2937;
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .topbar {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .logo-text {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .logo-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .call-link {
+      color: var(--accent-yellow);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 32px 16px 28px;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr);
+      gap: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+        align-items: stretch;
+      }
+    }
+
+    .hero-main {
+      background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8));
+      border-radius: 18px;
+      padding: 22px 18px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.9);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent-yellow);
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      font-size: 11px;
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.8);
+    }
+
+    .badge-pill {
+      background: var(--accent-soft);
+      border-color: rgba(34, 197, 94, 0.4);
+      color: #bbf7d0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: var(--accent-yellow);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-main);
+      font-size: 13px;
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .hero-note {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .hero-side {
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 16px 14px 14px;
+      background: radial-gradient(circle at top, rgba(34, 197, 94, 0.15), rgba(15, 23, 42, 0.9));
+    }
+
+    .metric-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 4px;
+    }
+
+    .metric-value {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .metric-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .metric-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    .metric-tag {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    .pill-soft {
+      background: rgba(34, 197, 94, 0.13);
+      border-color: rgba(34, 197, 94, 0.6);
+      color: #bbf7d0;
+    }
+
+    .hero-mini-note {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto 80px;
+      padding: 0 16px 40px;
+    }
+
+    section {
+      margin-top: 26px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 6px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin: 0 0 4px;
+    }
+
+    p {
+      margin: 0 0 6px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    ul {
+      margin: 4px 0 8px 20px;
+      padding: 0;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      border-radius: 14px;
+      padding: 12px 12px 10px;
+      border: 1px solid var(--border-soft);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .card-soft {
+      background: rgba(15, 23, 42, 0.8);
+    }
+
+    .pill-heading {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent-yellow);
+      margin-bottom: 6px;
+    }
+
+    .service-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    .keyword-pill {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px dashed rgba(148, 163, 184, 0.5);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .two-col {
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      }
+    }
+
+    .reviews {
+      border-radius: 16px;
+      border: 1px solid var(--border-soft);
+      padding: 14px 14px 10px;
+      background: rgba(15, 23, 42, 0.94);
+    }
+
+    .review {
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+    }
+
+    .review:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .review-name {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: #e5e7eb;
+    }
+
+    .review-stars {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .areas-box {
+      border-radius: 16px;
+      padding: 14px 14px 10px;
+      background: var(--bg-deep);
+      border: 1px solid var(--border-soft);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      font-size: 11px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    footer {
+      padding: 18px 16px 70px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Sticky contact bar */
+    .contact-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: radial-gradient(circle at top left, #22c55e, #0b1120 54%, #020617 100%);
+      color: #f9fafb;
+      padding: 6px 10px;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      border-top: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    .contact-label {
+      font-weight: 500;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .contact-call {
+      background: #fbbf24;
+      color: #111827;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .contact-wa {
+      border: 1px solid rgba(248, 250, 252, 0.7);
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #f9fafb;
+    }
+  </style>
 
   <!-- LocalBusiness Schema for SEO -->
   <script type="application/ld+json">
@@ -12,7 +447,7 @@
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Kitchen Fix",
-    "description": "RO water purifier service and repair company in Delhi. Same day RO purifier service at home, RO installation, RO purifier maintenance and annual maintenance contract (AMC).",
+    "description": "RO water purifier service and repair company in Delhi. Same day RO purifier service at home, RO installation, RO water purifier AMC and multi-brand RO repair.",
     "telephone": "+919643986012",
     "areaServed": {
       "@type": "City",
@@ -28,7 +463,7 @@
   }
   </script>
 
-  <!-- FAQ Schema for RO Service SEO -->
+  <!-- FAQ Schema for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,31 +474,31 @@
         "name": "Do you provide RO purifier service at home in Delhi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Kitchen Fix provides RO purifier service at home in many areas of Delhi. If you search for RO service near me or RO repair near me, we offer doorstep RO water purifier service and repair with trained technicians."
+          "text": "Yes, Kitchen Fix provides RO purifier service at home across many parts of Delhi. Customers searching for RO service near me or RO repair near me get doorstep RO water purifier service by trained technicians."
         }
       },
       {
         "@type": "Question",
-        "name": "Which brands of RO water purifiers do you service?",
+        "name": "Which RO brands do you repair and service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We provide multi-brand RO water purifier service including Kent RO service near me, Aquaguard RO service near me, Livpure RO service near me and Pureit RO service near me, along with many other leading RO brands."
+          "text": "We offer multi-brand RO water purifier service including Kent RO service near me, Aquaguard RO service near me, Livpure RO service near me and Pureit RO service near me, along with several other leading RO brands."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you provide RO installation service in Delhi?",
+        "name": "Do you provide RO installation near me in Delhi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we offer RO installation near me and RO uninstallation and reinstallation service within Delhi. Our technicians mount the RO purifier properly, connect inlet and outlet and check water flow and TDS level."
+          "text": "Yes, our team handles RO installation near me for new units as well as uninstallation and reinstallation when you shift your house. We mount the RO unit, connect water lines, check for leakage and verify TDS levels."
         }
       },
       {
         "@type": "Question",
-        "name": "What is RO water purifier AMC?",
+        "name": "What is included in RO water purifier AMC?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "RO water purifier AMC is an annual maintenance contract that includes multiple RO purifier maintenance service visits in a year, filter change as per plan, cleaning, performance check and basic repairs so that your RO gives safe water throughout the year."
+          "text": "RO water purifier AMC is an annual maintenance contract that includes multiple RO purifier maintenance service visits, cleaning, performance checks, basic repairs and timely filter change recommendations so that your RO continues to give safe drinking water throughout the year."
         }
       }
     ]
@@ -71,239 +506,409 @@
   </script>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5;">
+<body>
 
-  <!-- TOP BAR -->
-  <div style="background:#111827; color:#fff; padding:8px 12px; text-align:center; font-size:14px;">
-    Kitchen Fix – RO Water Purifier Service &amp; Repair in Delhi |
-    Call: <a href="tel:+919643986012" style="color:#fbbf24; font-weight:bold; text-decoration:none;">9643986012</a>
-  </div>
-
-  <!-- HERO SECTION -->
-  <div style="background:#1f2937; color:#fff; padding:26px 12px;">
-    <h1 style="font-size:22px; margin-bottom:10px; text-align:center;">
-      RO Water Purifier Service &amp; Repair in Delhi
-    </h1>
-    <p style="max-width:840px; margin:0 auto; font-size:14px; line-height:1.6; text-align:center;">
-      If you are looking for <strong>RO service near me</strong>, <strong>RO repair near me</strong> or
-      <strong>RO water purifier service near me</strong> in Delhi, Kitchen Fix provides doorstep
-      <strong>RO water purifier service</strong>, <strong>RO water purifier repair</strong> and
-      <strong>RO purifier service at home</strong> with trained technicians.
-    </p>
-    <p style="max-width:840px; margin:12px auto 0; font-size:13px; line-height:1.6; text-align:center;">
-      We handle <strong>RO repair service near me</strong>, <strong>RO installation near me</strong>,
-      <strong>water purifier service near me</strong> and <strong>water purifier repair near me</strong>
-      for households across Delhi. Call <strong>9643986012</strong> or WhatsApp us to book
-      <strong>RO purifier maintenance service</strong> for your home.
-    </p>
-
-    <!-- CALL / WHATSAPP BUTTONS -->
-    <div style="margin-top:14px; text-align:center;">
-      <a href="tel:+919643986012" style="display:inline-block; margin:4px; padding:8px 14px; border-radius:999px; background:#fbbf24; color:#111827; text-decoration:none; font-weight:bold;">📞 Call Now: 9643986012</a>
-      <a href="https://wa.me/919643986012" target="_blank" style="display:inline-block; margin:4px; padding:8px 14px; border-radius:999px; border:1px solid #e5e7eb; color:#e5e7eb; text-decoration:none;">💬 WhatsApp Booking</a>
+  <!-- HEADER -->
+  <header>
+    <div class="topbar">
+      <div class="logo-text">
+        <span class="logo-dot"></span>
+        <span>Kitchen Fix • RO Service Delhi</span>
+      </div>
+      <div>
+        <a class="call-link" href="tel:+919643986012">Call: 9643986012</a>
+      </div>
     </div>
-  </div>
+  </header>
 
-  <!-- MAIN CONTENT WRAPPER -->
-  <div style="max-width:960px; margin:20px auto 80px; padding:0 12px; box-sizing:border-box;">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Left main hero -->
+      <div class="hero-main">
+        <div class="eyebrow">RO service near me • Delhi</div>
+        <h1>RO Water Purifier Service, Repair &amp; Installation in Delhi</h1>
+        <p class="hero-sub">
+          Kitchen Fix is a focused <strong>RO water purifier service</strong> company in Delhi.
+          We handle <strong>RO service near me</strong>, <strong>RO repair near me</strong>,
+          <strong>RO purifier service at home</strong> and <strong>RO installation near me</strong>
+          so that your family always gets safe drinking water.
+        </p>
+
+        <div class="hero-badges">
+          <span class="badge badge-pill">Same day slots (subject to availability)</span>
+          <span class="badge">Multi-brand RO repair &amp; maintenance</span>
+          <span class="badge">Doorstep RO water quality check</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="tel:+919643986012" class="btn-primary">📞 Call Now – 9643986012</a>
+          <a href="https://wa.me/919643986012" target="_blank" class="btn-secondary">💬 WhatsApp booking</a>
+        </div>
+        <div class="hero-note">
+          Popular searches we serve: <strong>ro water purifier service near me</strong>,
+          <strong>water purifier service near me</strong>, <strong>ro repair service near me</strong>,
+          <strong>water purifier repair near me</strong>.
+        </div>
+      </div>
+
+      <!-- Right metrics / quick info -->
+      <aside class="hero-side">
+        <div class="metric-label">RO purifier focus</div>
+        <div class="metric-value">Doorstep RO Service in Delhi</div>
+        <div class="metric-sub">
+          We help when your RO stops working, gives bad taste, low flow or TDS problems.
+        </div>
+
+        <div class="metric-tags">
+          <span class="metric-tag pill-soft">RO water purifier repair</span>
+          <span class="metric-tag">RO purifier service at home</span>
+          <span class="metric-tag">RO water purifier AMC</span>
+        </div>
+
+        <div class="metric-label">Typical issues we solve</div>
+        <div class="metric-sub">
+          No water, leakage, noisy pump, tank not filling, high or low TDS, bad taste or smell.
+        </div>
+
+        <div class="hero-mini-note">
+          Need quick help? Call or WhatsApp on <strong>9643986012</strong> and mention that
+          you are looking for <strong>RO service near me in Delhi</strong>.
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main>
 
     <!-- WHY CHOOSE -->
-    <h2 style="font-size:20px; margin-bottom:8px;">Why Choose Kitchen Fix for RO Water Purifier Service in Delhi?</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      Kitchen Fix is a local service company focused on <strong>RO water purifier service</strong> and
-      <strong>RO water purifier repair</strong> in Delhi. We understand that safe drinking water is critical for
-      your family, so we offer fast <strong>RO purifier service at home</strong> with transparent pricing
-      and multi-brand support.
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>Doorstep <strong>RO service near me</strong> and <strong>RO repair service near me</strong> across many parts of Delhi</li>
-      <li>Trained technicians for <strong>RO water purifier service near me</strong> and <strong>water purifier repair near me</strong></li>
-      <li>Clear explanation of issues, parts and charges before starting any RO repair</li>
-      <li>Support for <strong>RO water purifier AMC</strong> and regular <strong>RO purifier maintenance service</strong></li>
-      <li>Quick response for emergency breakdowns and no-water situations</li>
-    </ul>
-
-    <!-- RO SERVICES LIST -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">Our RO Water Purifier Services in Delhi</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      We provide almost every type of <strong>RO water purifier service</strong> required in a home. Whether
-      you need <strong>RO repair near me</strong>, <strong>RO installation near me</strong> or regular
-      <strong>RO purifier maintenance service</strong>, Kitchen Fix can help:
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li><strong>RO water purifier service near me</strong> – basic servicing, cleaning and performance check</li>
-      <li><strong>RO water purifier repair</strong> – no water, low water flow, bad taste, TDS problems and leakage</li>
-      <li><strong>RO installation near me</strong> – new RO installation, relocation and reinstallation</li>
-      <li><strong>RO purifier service at home</strong> – doorstep visits with complete service at your kitchen</li>
-      <li><strong>RO water purifier AMC</strong> – yearly RO service plan with scheduled visits</li>
-      <li><strong>RO purifier maintenance service</strong> – filter change reminders and periodic health check-up</li>
-    </ul>
-
-    <!-- INSTALLATION SECTION -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">RO Installation &amp; Uninstallation Service in Delhi</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      If you have bought a new RO or are shifting to a new home, we provide
-      <strong>RO installation near me</strong> and uninstallation services in Delhi. Our technicians mount
-      the RO unit properly, connect inlet and outlet pipes, check water flow and measure TDS to ensure
-      the RO water purifier is working correctly.
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>New RO wall mounting and installation</li>
-      <li>Uninstallation of old RO and reinstallation at a new location</li>
-      <li>Basic plumbing connection support for inlet and outlet lines</li>
-      <li>Final leak check and TDS testing after RO installation</li>
-    </ul>
-
-    <!-- BRAND-WISE SERVICES -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">Multi-Brand RO Water Purifier Service in Delhi</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      We offer <strong>RO water purifier service</strong> and <strong>RO water purifier repair</strong>
-      for many popular brands. If you are searching for any of the following:
-      <strong>kent ro service near me</strong>, <strong>aquaguard ro service near me</strong>,
-      <strong>livpure ro service near me</strong> or <strong>pureit ro service near me</strong>,
-      Kitchen Fix can help with doorstep service:
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li><strong>Kent RO service near me</strong> – service for Kent RO water purifiers, filters and membranes</li>
-      <li><strong>Aquaguard RO service near me</strong> – service and repair for Aquaguard and Aquasure models</li>
-      <li><strong>Livpure RO service near me</strong> – service and part replacement for Livpure RO water purifiers</li>
-      <li><strong>Pureit RO service near me</strong> – service and maintenance for Pureit RO and UV+RO purifiers</li>
-      <li>Many other popular RO brands supported in Delhi</li>
-    </ul>
-    <p style="font-size:12px; color:#6b7280; margin-top:4px;">
-      Note: Kitchen Fix is an independent multi-brand service provider and is not an authorised service centre
-      of Kent, Aquaguard, Livpure, Pureit or any other brand. Brand names are used only to describe the type
-      of <strong>RO water purifier service</strong> we handle.
-    </p>
-
-    <!-- AMC & MAINTENANCE -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">RO Water Purifier AMC &amp; Maintenance Service</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      To keep your water clean and safe throughout the year, we provide
-      <strong>RO water purifier AMC</strong> plans. Our <strong>RO purifier maintenance service</strong>
-      includes scheduled visits, cleaning and performance checks so that your RO continues to work properly.
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>Multiple <strong>RO water purifier service</strong> visits in a year as per AMC plan</li>
-      <li>Cleaning of sediment filter, carbon filter housing and RO storage tank</li>
-      <li>Basic inspection of pump, SMPS, tubing and connections</li>
-      <li>Guidance on timely filter and membrane replacement</li>
-    </ul>
-
-    <!-- COMMON PROBLEMS -->
-    <h3 style="font-size:16px; margin:18px 0 6px;">Common RO Water Purifier Problems We Fix</h3>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>RO not working or no power</li>
-      <li>No water from RO tap or very low water flow</li>
-      <li>Bad taste or smell in RO water</li>
-      <li>High or low TDS compared to required level</li>
-      <li>Water leakage from RO cabinet, pipes or fittings</li>
-      <li>RO storage tank not filling or overflowing</li>
-    </ul>
-
-    <!-- CUSTOMER REVIEWS (STATIC) -->
-    <div style="margin-top:24px; padding:16px 12px; background:#ffffff; border-radius:8px; border:1px solid #e5e7eb;">
-      <h2 style="font-size:18px; margin-bottom:10px; text-align:center;">
-        Customer Reviews – RO Water Purifier Service in Delhi
-      </h2>
-
-      <!-- Review 1 -->
-      <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #e5e7eb;">
-        <p style="font-size:13px; margin:0 0 4px;"><strong>Amit Verma – Dwarka Sector 6</strong></p>
-        <p style="font-size:13px; margin:0 0 4px;">⭐⭐⭐⭐⭐</p>
-        <p style="font-size:13px; color:#374151; margin:0;">
-          I searched for <strong>RO service near me</strong> and booked Kitchen Fix. The technician serviced my
-          Kent RO and fixed low water flow in one visit. Very professional RO water purifier service at home.
-        </p>
-      </div>
-
-      <!-- Review 2 -->
-      <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #e5e7eb;">
-        <p style="font-size:13px; margin:0 0 4px;"><strong>Priya Sharma – Janakpuri</strong></p>
-        <p style="font-size:13px; margin:0 0 4px;">⭐⭐⭐⭐⭐</p>
-        <p style="font-size:13px; color:#374151; margin:0;">
-          My Aquaguard was giving bad taste. Kitchen Fix provided quick
-          <strong>RO water purifier repair</strong> and cleaning. Now the water tastes much better.
-          Happy with their <strong>water purifier service near me</strong>.
-        </p>
-      </div>
-
-      <!-- Review 3 -->
-      <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:10px solid #e5e7eb;">
-        <p style="font-size:13px; margin:0 0 4px;"><strong>Imran Khan – Rohini Sector 13</strong></p>
-        <p style="font-size:13px; margin:0 0 4px;">⭐⭐⭐⭐⭐</p>
-        <p style="font-size:13px; color:#374151; margin:0;">
-          I booked them for <strong>RO repair near me</strong> when my RO stopped working. The technician found
-          a problem with the pump and SMPS, explained everything and repaired it. Good experience overall.
-        </p>
-      </div>
-
-      <!-- Review 4 -->
-      <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #e5e7eb;">
-        <p style="font-size:13px; margin:0 0 4px;"><strong>Neha Gupta – Malviya Nagar</strong></p>
-        <p style="font-size:13px; margin:0 0 4px;">⭐⭐⭐⭐⭐</p>
-        <p style="font-size:13px; color:#374151; margin:0;">
-          I shifted to a new flat and needed <strong>RO installation near me</strong>. Kitchen Fix handled the
-          complete RO mounting, connection and TDS setting. Smooth RO installation service in Delhi.
-        </p>
-      </div>
-
-      <!-- Review 5 -->
-      <div>
-        <p style="font-size:13px; margin:0 0 4px;"><strong>Sunita – Paschim Vihar</strong></p>
-        <p style="font-size:13px; margin:0 0 4px;">⭐⭐⭐⭐⭐</p>
-        <p style="font-size:13px; color:#374151; margin:0;">
-          I took an <strong>RO water purifier AMC</strong> plan from Kitchen Fix. Now they come for
-          <strong>RO purifier maintenance service</strong> at home regularly, clean the unit and remind me
-          about filter changes. Very convenient for my family.
-        </p>
-      </div>
-    </div>
-
-    <!-- AREAS WE COVER (REUSED FROM MAIN SITE) -->
-    <div style="margin-top:22px; padding:16px 12px; background:#0f172a; color:#e5e7eb; border-radius:8px;">
-      <h2 style="font-size:18px; margin-bottom:8px; text-align:center;">
-        RO Water Purifier Service Near Me – Areas We Cover in Delhi
-      </h2>
-      <p style="font-size:13px; text-align:center; margin-bottom:8px;">
-        If you search for <strong>&quot;RO water purifier service near me&quot;</strong> or
-        <strong>&quot;water purifier repair near me&quot;</strong> in Delhi, Kitchen Fix provides doorstep
-        RO service in many residential areas. We cover important locations in Central, South, North,
-        West and East Delhi.
+    <section>
+      <div class="pill-heading">Why kitchen fix</div>
+      <h2>Why Choose Kitchen Fix for RO Water Purifier Service in Delhi?</h2>
+      <p>
+        Instead of treating RO service as a side business, Kitchen Fix focuses heavily on
+        <strong>RO water purifier service</strong> and <strong>RO water purifier repair</strong> for
+        apartments and independent homes in Delhi. We care about water quality and try to solve
+        the root cause – not just reset error lights.
       </p>
 
-      <p style="font-size:13px; text-align:center; margin-bottom:8px;">
-        Connaught Place, Karol Bagh, Paharganj, Rajender Nagar, Civil Lines, Model Town, Burari,
-        Hauz Khas, Malviya Nagar, Greater Kailash I, Kalkaji, Vasant Kunj, Dwarka (Sector 1, 3, 6, 8,
-        11, 15, 18, 21, 24, 27, 29), Palam, Janakpuri, Uttam Nagar, Rajouri Garden, Tilak Nagar,
-        Punjabi Bagh, Paschim Vihar, Vikaspuri, Preet Vihar, Mayur Vihar Phase 1, Shahdara,
-        Krishna Nagar, Yamuna Vihar, Bhajanpura, Rohini (Sector 1, 4, 6, 8, 11, 13, 16, 19, 21, 24),
-        Pitampura, Shalimar Bagh, Ashok Vihar and Keshavpuram for
-        <strong>RO purifier service at home in Delhi</strong>.
+      <div class="grid-3">
+        <div class="card card-soft">
+          <h3>Home-visit RO service</h3>
+          <p>
+            Technicians visit your kitchen, perform <strong>RO purifier service at home</strong>,
+            clean key components and check water taste, odour and flow.
+          </p>
+          <ul>
+            <li>Basic &amp; deep cleaning packages</li>
+            <li>On-site TDS measurement</li>
+            <li>Quick fixes for minor issues</li>
+          </ul>
+        </div>
+
+        <div class="card card-soft">
+          <h3>Clear diagnosis before repair</h3>
+          <p>
+            Before starting any <strong>ro repair service near me</strong>, we share the likely
+            problem, parts involved and estimated cost so you stay in control.
+          </p>
+          <ul>
+            <li>Transparent explanation</li>
+            <li>No surprise repair bills</li>
+            <li>Use of compatible parts only if needed</li>
+          </ul>
+        </div>
+
+        <div class="card card-soft">
+          <h3>Regular AMC &amp; maintenance</h3>
+          <p>
+            Households that want zero-tension water opt for our
+            <strong>RO water purifier AMC</strong> – planned <strong>RO purifier maintenance service</strong>
+            across the year.
+          </p>
+          <ul>
+            <li>Scheduled service reminders</li>
+            <li>Multiple visits per year (plan-wise)</li>
+            <li>Performance &amp; safety checks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN SERVICES -->
+    <section>
+      <div class="pill-heading">What we do</div>
+      <h2>RO Service, Repair, Installation &amp; AMC – All in One Place</h2>
+      <p>
+        Whether your RO has stopped working, you see leakage around the unit or you simply feel the
+        water does not taste right – Kitchen Fix can help. We cover all the major forms of
+        <strong>ro water purifier service</strong> that a home typically needs.
       </p>
-    </div>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>1. RO Service &amp; Cleaning</h3>
+          <p>
+            For customers searching <strong>ro water purifier service near me</strong> or
+            <strong>water purifier service near me</strong>, we provide thorough cleaning and health
+            check of the purifier.
+          </p>
+          <ul>
+            <li>Sanitisation of pre-filters and housings</li>
+            <li>Basic tank cleaning and flushing</li>
+            <li>Check for leakage, noise and pressure</li>
+          </ul>
+
+          <h3>2. RO Water Purifier Repair</h3>
+          <p>
+            If you need <strong>ro repair near me</strong>, <strong>ro purifier repair near me</strong> or
+            <strong>water purifier repair near me</strong>, our technicians inspect pump, SMPS, float
+            valve, pipes and connectors to fix the actual fault.
+          </p>
+          <ul>
+            <li>No water or slow water flow</li>
+            <li>Bad taste, smell or visible particles</li>
+            <li>Tank not filling or overflowing</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>3. RO Installation &amp; Re-Installation</h3>
+          <p>
+            Bought a new unit or shifting house? Book <strong>ro installation near me</strong> and a
+            technician will mount the purifier, connect inlet/outlet and check water quality.
+          </p>
+          <ul>
+            <li>New RO wall mount installation</li>
+            <li>Uninstallation &amp; re-installation at new address</li>
+            <li>TDS and leakage testing after installation</li>
+          </ul>
+
+          <h3>4. RO Water Purifier AMC</h3>
+          <p>
+            For families that don’t want to remember service dates, our
+            <strong>ro water purifier amc</strong> takes care of periodic servicing and
+            <strong>ro purifier maintenance service</strong> throughout the year.
+          </p>
+          <ul>
+            <li>Pre-scheduled visits as per plan</li>
+            <li>Cleaning, performance and safety checks</li>
+            <li>Filter/membrane change suggestions based on water quality</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Keyword chips -->
+      <div class="service-keywords">
+        <span class="keyword-pill">ro service near me</span>
+        <span class="keyword-pill">ro repair near me</span>
+        <span class="keyword-pill">ro water purifier service near me</span>
+        <span class="keyword-pill">ro water purifier repair</span>
+        <span class="keyword-pill">water purifier service near me</span>
+        <span class="keyword-pill">water purifier repair near me</span>
+        <span class="keyword-pill">ro repair service near me</span>
+        <span class="keyword-pill">ro installation near me</span>
+        <span class="keyword-pill">ro purifier service at home</span>
+      </div>
+    </section>
+
+    <!-- BRAND SECTION -->
+    <section>
+      <div class="pill-heading">Multi-brand specialist</div>
+      <h2>Service for Kent, Aquaguard, Livpure, Pureit &amp; More</h2>
+      <p>
+        Many customers search for <strong>kent ro service near me</strong>,
+        <strong>aquaguard ro service near me</strong>, <strong>livpure ro service near me</strong> or
+        <strong>pureit ro service near me</strong>. Kitchen Fix provides multi-brand support so that you
+        do not have to call different agencies for different purifiers.
+      </p>
+
+      <div class="grid-3">
+        <div class="card card-soft">
+          <h3>Kent RO Service</h3>
+          <p>
+            Doorstep service for popular Kent RO models – checking filters, membranes, pump and
+            electrical components with proper flushing.
+          </p>
+        </div>
+        <div class="card card-soft">
+          <h3>Aquaguard &amp; Aquasure</h3>
+          <p>
+            Complete <strong>aquaguard ro service near me</strong> including cartridge cleaning,
+            leakage fixing and taste improvement.
+          </p>
+        </div>
+        <div class="card card-soft">
+          <h3>Livpure, Pureit &amp; Others</h3>
+          <p>
+            Support for <strong>livpure ro service near me</strong>, <strong>pureit ro service near me</strong>
+            and many other RO brands commonly used in Delhi homes.
+          </p>
+        </div>
+      </div>
+
+      <p style="font-size:11px; margin-top:6px;">
+        Note: Kitchen Fix is an independent multi-brand service provider. We are not an authorised
+        service centre of Kent, Aquaguard, Livpure, Pureit or any other manufacturer. Brand names are
+        used only to explain the type of <strong>ro water purifier service</strong> we handle.
+      </p>
+    </section>
+
+    <!-- COMMON PROBLEMS + REVIEWS -->
+    <section>
+      <div class="two-col">
+        <!-- Problems -->
+        <div>
+          <div class="pill-heading">Problems we fix</div>
+          <h2>Common RO Issues Our Technicians Handle</h2>
+          <p>
+            These are some of the everyday problems where people call us for
+            <strong>ro repair service near me</strong> in Delhi:
+          </p>
+          <ul>
+            <li>RO not starting or switching off randomly</li>
+            <li>No water from tap or very low flow from the purifier</li>
+            <li>Unpleasant taste, smell or visible particles in water</li>
+            <li>Water leakage around RO cabinet, pipes or storage tank</li>
+            <li>Storage tank not filling or overflowing continuously</li>
+            <li>High or very low TDS compared to safe range for your area</li>
+          </ul>
+          <p>
+            If any of these looks familiar, give us a quick call on
+            <strong>9643986012</strong> and mention your area in Delhi – we’ll try to schedule
+            <strong>ro purifier service at home</strong> as soon as possible.
+          </p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews">
+          <h2 style="font-size:16px; margin-bottom:8px;">Customer Reviews – RO Service in Delhi</h2>
+
+          <div class="review">
+            <div class="review-name">Amit Verma – Dwarka Sector 6</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              I was searching for <strong>ro service near me</strong> when our Kent purifier stopped
+              giving water. Kitchen Fix technician reached on time, serviced the unit and fixed the
+              low flow issue in one visit.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Priya Sharma – Janakpuri</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              The Aquaguard water had a bad taste. Their engineer did a complete
+              <strong>ro water purifier repair</strong>, changed a few filters and cleaned the tank.
+              Water tastes fresh again.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Imran Khan – Rohini Sector 13</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              I booked them for <strong>ro repair near me</strong> when the pump noise became very loud.
+              The problem was diagnosed quickly and resolved without pushing unnecessary parts.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Neha Gupta – Malviya Nagar</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              Needed <strong>ro installation near me</strong> after shifting. The team handled
+              uninstallation from the old flat and re-installation at the new place with proper
+              TDS check. Smooth experience.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Sunita – Paschim Vihar</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              We opted for an <strong>ro water purifier amc</strong> with Kitchen Fix. They now visit
+              periodically for <strong>ro purifier maintenance service</strong> so we don’t have to
+              remember service dates or worry about water quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS WE COVER -->
+    <section>
+      <div class="areas-box">
+        <div class="pill-heading">Service coverage</div>
+        <h2>RO Water Purifier Service Near Me – Areas in Delhi We Cover</h2>
+        <p>
+          Kitchen Fix provides <strong>ro purifier service at home</strong> in a wide list of localities
+          across Delhi. If you stay in or around the areas mentioned below, you can reach us for
+          <strong>ro water purifier service near me</strong> and doorstep repair.
+        </p>
+
+        <p>
+          Connaught Place, Karol Bagh, Paharganj, Rajender Nagar, Civil Lines, Model Town, Burari,
+          Hauz Khas, Malviya Nagar, Greater Kailash I, Kalkaji, Vasant Kunj, Dwarka
+          (Sectors 1, 3, 6, 8, 11, 15, 18, 21, 24, 27, 29), Palam, Janakpuri, Uttam Nagar,
+          Rajouri Garden, Tilak Nagar, Punjabi Bagh, Paschim Vihar, Vikaspuri, Preet Vihar,
+          Mayur Vihar Phase 1, Shahdara, Krishna Nagar, Yamuna Vihar, Bhajanpura, Rohini
+          (Sectors 1, 4, 6, 8, 11, 13, 16, 19, 21, 24), Pitampura, Shalimar Bagh, Ashok Vihar
+          and Keshavpuram.
+        </p>
+
+        <div class="chips">
+          <span class="chip">Dwarka</span>
+          <span class="chip">Janakpuri</span>
+          <span class="chip">Paschim Vihar</span>
+          <span class="chip">Rohini</span>
+          <span class="chip">Pitampura</span>
+          <span class="chip">Malviya Nagar</span>
+          <span class="chip">Vasant Kunj</span>
+          <span class="chip">Greater Kailash</span>
+          <span class="chip">Connaught Place</span>
+          <span class="chip">Karol Bagh</span>
+          <span class="chip">Preet Vihar</span>
+          <span class="chip">Shahdara</span>
+        </div>
+
+        <p style="margin-top:8px;">
+          If your area is not in the list, you can still call or WhatsApp us – we will confirm
+          whether <strong>ro service near me in Delhi</strong> is possible for your location.
+        </p>
+      </div>
+    </section>
 
     <!-- FINAL CTA -->
-    <p style="font-size:13px; margin-top:16px; text-align:center;">
-      For <strong>RO water purifier service near me</strong>, <strong>RO water purifier repair</strong>,
-      <strong>RO installation near me</strong> or <strong>RO water purifier AMC</strong> in Delhi,
-      call now on
-      <a href="tel:+919643986012" style="color:#111827; font-weight:bold; text-decoration:none;">
-        9643986012
-      </a>
-      or WhatsApp us to book your visit.
-    </p>
+    <section>
+      <div class="pill-heading">Ready to book?</div>
+      <h2>Book RO Service, Repair or Installation in Delhi</h2>
+      <p>
+        For any <strong>ro water purifier service</strong>, <strong>ro water purifier repair</strong>,
+        <strong>ro installation near me</strong> or <strong>ro purifier maintenance service</strong> in Delhi,
+        you can directly reach Kitchen Fix on:
+      </p>
+      <p><strong>📞 Call / WhatsApp: 9643986012</strong></p>
+      <p>
+        Share your RO brand, problem and location. Our team will guide you on the next available slot
+        for <strong>ro purifier service at home</strong>.
+      </p>
+    </section>
+  </main>
 
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    Kitchen Fix – RO water purifier service near me in Delhi • Independent multi-brand RO repair and maintenance.
+  </footer>
 
   <!-- STICKY CONTACT BAR -->
-  <div style="position:fixed; bottom:0; left:0; right:0; background:#0f172a; color:#e5e7eb; padding:6px 10px; font-size:13px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; box-sizing:border-box;">
-    <div style="font-weight:500; margin-bottom:4px;">
-      Kitchen Fix – RO Water Purifier Service &amp; Repair in Delhi • Call / WhatsApp
+  <div class="contact-bar">
+    <div class="contact-label">
+      Kitchen Fix • RO Service &amp; Repair in Delhi
     </div>
-    <div>
-      <a href="tel:+919643986012" style="background:#fbbf24; color:#111827; padding:6px 10px; border-radius:999px; font-weight:bold; text-decoration:none; margin-right:6px;">📞 Call 9643986012</a>
-      <a href="https://wa.me/919643986012" target="_blank" style="border:1px solid #374151; padding:6px 10px; border-radius:999px; text-decoration:none; color:#e5e7eb;">💬 WhatsApp</a>
+    <div class="contact-actions">
+      <a href="tel:+919643986012" class="contact-call">📞 Call 9643986012</a>
+      <a href="https://wa.me/919643986012" target="_blank" class="contact-wa">💬 WhatsApp</a>
     </div>
   </div>
 
