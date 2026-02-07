@@ -1,24 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Chimney Repair Service Near Me in Delhi | Kitchen Chimney Service, Installation & AMC – Kitchen Fix</title>
-  <meta name="description" content="Kitchen Fix – same day chimney repair service at home in Delhi. Chimney repair service, kitchen chimney service, chimney installation service, chimney maintenance service, chimney cleaning service, chimney servicing near me, kitchen chimney repair near me, chimney motor & duct repair, chimney filter cleaning service, chimney AMC service. Call 9643986012.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kitchen Fix provides chimney repair service near me in Delhi – kitchen chimney service, chimney installation service, chimney deep cleaning, chimney maintenance service, same day chimney repair at home and chimney AMC service for Elica, Faber, Hindware, Kaff, Bosch and more. Call 9643986012." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- LocalBusiness Schema for SEO -->
+  <!-- Page styling – unique dark gradient + cards -->
+  <style>
+    :root {
+      --bg-dark: #020617;
+      --bg-card: #020617;
+      --bg-deep: #0f172a;
+      --accent: #f97316;          /* orange accent for chimney */
+      --accent-soft: rgba(249, 115, 22, 0.15);
+      --accent-yellow: #fbbf24;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-soft: #1f2937;
+      --max-width: 1024px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #f97316 0, #020617 55%, #020617 100%);
+      color: var(--text-main);
+    }
+
+    a {
+      color: var(--accent-yellow);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: rgba(2, 6, 23, 0.9);
+      border-bottom: 1px solid #1f2937;
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .topbar {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .logo-text {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .logo-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 10px rgba(248, 250, 252, 0.7);
+    }
+
+    .call-link {
+      color: var(--accent-yellow);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 32px 16px 28px;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr);
+      gap: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2.1fr);
+        align-items: stretch;
+      }
+    }
+
+    .hero-main {
+      background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85));
+      border-radius: 18px;
+      padding: 22px 18px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.9);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent-yellow);
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      font-size: 11px;
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .badge-pill {
+      background: var(--accent-soft);
+      border-color: rgba(249, 115, 22, 0.7);
+      color: #fed7aa;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: var(--accent-yellow);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-main);
+      font-size: 13px;
+      background: rgba(15, 23, 42, 0.7);
+    }
+
+    .hero-note {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .hero-side {
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 16px 14px 14px;
+      background: radial-gradient(circle at top, rgba(248, 250, 252, 0.25), rgba(15, 23, 42, 0.96));
+    }
+
+    .metric-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 4px;
+    }
+
+    .metric-value {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .metric-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .metric-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    .metric-tag {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.8);
+    }
+
+    .pill-soft {
+      background: rgba(249, 115, 22, 0.12);
+      border-color: rgba(249, 115, 22, 0.7);
+      color: #fed7aa;
+    }
+
+    .hero-mini-note {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto 80px;
+      padding: 0 16px 40px;
+    }
+
+    section {
+      margin-top: 26px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 6px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin: 0 0 4px;
+    }
+
+    p {
+      margin: 0 0 6px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    ul {
+      margin: 4px 0 8px 20px;
+      padding: 0;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      border-radius: 14px;
+      padding: 12px 12px 10px;
+      border: 1px solid var(--border-soft);
+      background: rgba(15, 23, 42, 0.94);
+    }
+
+    .card-soft {
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .pill-heading {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent-yellow);
+      margin-bottom: 6px;
+    }
+
+    .service-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    .keyword-pill {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px dashed rgba(148, 163, 184, 0.5);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .two-col {
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      }
+    }
+
+    .reviews {
+      border-radius: 16px;
+      border: 1px solid var(--border-soft);
+      padding: 14px 14px 10px;
+      background: rgba(15, 23, 42, 0.96);
+    }
+
+    .review {
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+    }
+
+    .review:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .review-name {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: #e5e7eb;
+    }
+
+    .review-stars {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .areas-box {
+      border-radius: 16px;
+      padding: 14px 14px 10px;
+      background: var(--bg-deep);
+      border: 1px solid var(--border-soft);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      font-size: 11px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+    }
+
+    footer {
+      padding: 18px 16px 70px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Sticky contact bar */
+    .contact-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: radial-gradient(circle at top left, #f97316, #0b1120 60%, #020617 100%);
+      color: #f9fafb;
+      padding: 6px 10px;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      border-top: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    .contact-label {
+      font-weight: 500;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .contact-call {
+      background: #fbbf24;
+      color: #111827;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .contact-wa {
+      border: 1px solid rgba(248, 250, 252, 0.7);
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #f9fafb;
+    }
+  </style>
+
+  <!-- LocalBusiness Schema for SEO (chimney focus) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Kitchen Fix",
-    "description": "Kitchen chimney repair service in Delhi. Same day chimney repair service at home, chimney installation service, chimney cleaning and chimney AMC service.",
+    "description": "Kitchen chimney repair service in Delhi. Same day chimney repair service at home, chimney installation service, chimney deep cleaning, chimney maintenance and chimney AMC service.",
     "telephone": "+919643986012",
     "areaServed": {
       "@type": "City",
       "name": "Delhi"
     },
-    "url": "https://candid-pika-884095.netlify.app",
+    "url": "https://candid-pika-884095.netlify.app/chimney-repair-delhi.html",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Delhi",
@@ -36,34 +471,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Kya aap same day chimney repair service at home dete hain?",
+        "name": "Do you provide same day chimney repair service at home in Delhi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Haan, Kitchen Fix Delhi ke bahut se areas me same day chimney repair service at home dene ki koshish karta hai. Technician aapke kitchen chimney ko site par hi check, repair, cleaning aur testing karta hai."
+          "text": "Wherever possible, Kitchen Fix provides same day chimney repair service at home in many parts of Delhi. A chimney technician visits your kitchen, checks the chimney on site and tries to complete repair and cleaning in a single visit."
         }
       },
       {
         "@type": "Question",
-        "name": "Kitchen chimney installation cost kitni hoti hai?",
+        "name": "What is the typical kitchen chimney installation cost in Delhi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Kitchen chimney installation cost chimney ke model, wall height, ducting length aur site condition par depend karti hai. Aap hamare number 9643986012 par call karke apne area ke liye exact chimney installation service charges pooch sakte hain."
+          "text": "Kitchen chimney installation cost in Delhi depends on the chimney model, wall height, ducting length and onsite condition. You can call 9643986012 and share your brand and location to get an approximate chimney installation service charge for your home."
         }
       },
       {
         "@type": "Question",
-        "name": "Kaun-kaun se chimney brands repair karte hain?",
+        "name": "Which kitchen chimney brands do you repair?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Hum Elica chimney repair service, Faber chimney service, Hindware chimney repair, Kaff chimney service aur Bosch chimney repair service jaise multi-brand kitchen chimney service Delhi me provide karte hain."
+          "text": "We provide multi-brand kitchen chimney service including Elica chimney repair service, Faber chimney service, Hindware chimney repair, Kaff chimney service and Bosch chimney repair service along with several other brands commonly installed in Delhi kitchens."
         }
       },
       {
         "@type": "Question",
-        "name": "Chimney AMC service me kya-kya include hota hai?",
+        "name": "What is included in chimney AMC service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chimney AMC service me saal bhar me multiple chimney maintenance service visits, deep cleaning, performance check, suction test, noise check aur basic electrical inspection include hote hain."
+          "text": "Chimney AMC service is a yearly maintenance plan that includes multiple chimney maintenance service visits, deep cleaning of filters and hood, performance checks, suction testing, noise inspection and basic electrical safety checks so the chimney runs safely all year."
         }
       }
     ]
@@ -71,232 +506,427 @@
   </script>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5;">
+<body>
 
-  <!-- TOP BAR -->
-  <div style="background:#111827; color:#fff; padding:8px 12px; text-align:center; font-size:14px;">
-    Kitchen Fix – Kitchen Chimney Repair Service in Delhi |
-    Call: <a href="tel:+919643986012" style="color:#fbbf24; font-weight:bold; text-decoration:none;">9643986012</a>
-  </div>
-
-  <!-- HERO SECTION -->
-  <div style="background:#1f2937; color:#fff; padding:26px 12px;">
-    <h1 style="font-size:22px; margin-bottom:10px; text-align:center;">
-      Kitchen Chimney Repair &amp; Deep Cleaning Service in Delhi
-    </h1>
-    <p style="max-width:840px; margin:0 auto; font-size:14px; line-height:1.6; text-align:center;">
-      Agar aap Google par <strong>&quot;chimney repair service&quot;</strong>, <strong>&quot;kitchen chimney service&quot;</strong>,
-      <strong>&quot;chimney servicing near me&quot;</strong> ya <strong>&quot;chimney service near me&quot;</strong> search kar rahe hain,
-      to Kitchen Fix Delhi me aapko <strong>same day chimney repair service at home</strong> provide karta hai.
-      Hum <strong>chimney installation service</strong>, <strong>chimney maintenance service</strong>,
-      <strong>chimney cleaning service</strong> aur <strong>chimney AMC service</strong> sab ek hi jagah se dete hain.
-    </p>
-    <p style="max-width:840px; margin:12px auto 0; font-size:13px; line-height:1.6; text-align:center;">
-      Jo log <strong>kitchen chimney repair near me</strong> ya <strong>chimney servicing near me</strong> search karte hain,
-      unke liye hum Delhi ke multiple areas me doorstep visit karte hain. Call karein
-      <strong>9643986012</strong> ya WhatsApp karein service slot book karne ke liye.
-    </p>
-
-    <div style="margin-top:14px; text-align:center;">
-      <a href="tel:+919643986012" style="display:inline-block; margin:4px; padding:8px 14px; border-radius:999px; background:#fbbf24; color:#111827; text-decoration:none; font-weight:bold;">📞 Call Now: 9643986012</a>
-      <a href="https://wa.me/919643986012" target="_blank" style="display:inline-block; margin:4px; padding:8px 14px; border-radius:999px; border:1px solid #e5e7eb; color:#e5e7eb; text-decoration:none;">💬 WhatsApp Booking</a>
+  <!-- HEADER -->
+  <header>
+    <div class="topbar">
+      <div class="logo-text">
+        <span class="logo-dot"></span>
+        <span>Kitchen Fix • Chimney Service Delhi</span>
+      </div>
+      <div>
+        <a class="call-link" href="tel:+919643986012">Call: 9643986012</a>
+      </div>
     </div>
-  </div>
+  </header>
 
-  <!-- MAIN CONTENT WRAPPER -->
-  <div style="max-width:960px; margin:20px auto 80px; padding:0 12px; box-sizing:border-box;">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Main hero content -->
+      <div class="hero-main">
+        <div class="eyebrow">Chimney service near me • Delhi</div>
+        <h1>Kitchen Chimney Repair, Deep Cleaning &amp; Installation in Delhi</h1>
+        <p class="hero-sub">
+          Kitchen Fix is a dedicated <strong>chimney repair service</strong> company in Delhi.
+          We handle <strong>kitchen chimney service</strong>, <strong>chimney installation service</strong>,
+          <strong>chimney deep cleaning</strong> and <strong>chimney maintenance service</strong> so that
+          smoke and oil do not stay in your kitchen.
+        </p>
 
-    <!-- WHY CHOOSE -->
-    <h2 style="font-size:20px; margin-bottom:8px;">Why Choose Kitchen Fix for Chimney Repair Service in Delhi?</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      Kitchen Fix ek local multi-brand <strong>chimney repair service</strong> provider hai jo sirf
-      kitchen chimney par focus karta hai. Hum Delhi me ghar par hi <strong>chimney repair service at home</strong>,
-      <strong>kitchen chimney service</strong> aur regular <strong>chimney maintenance service</strong> provide karte hain.
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>Experienced chimney service technicians – daily basis par chimneys par kaam karte hain</li>
-      <li>Doorstep <strong>chimney cleaning service</strong> &amp; minor repair same visit me complete karne ki koshish</li>
-      <li>Clear discussion on <strong>kitchen chimney installation cost</strong> &amp; service charges</li>
-      <li>Multi-brand support – Elica, Faber, Hindware, Kaff, Bosch aur others</li>
-      <li>Option for regular <strong>chimney AMC service</strong> for tension-free maintenance</li>
-    </ul>
+        <div class="hero-badges">
+          <span class="badge badge-pill">Same day chimney repair (subject to slot)</span>
+          <span class="badge">Doorstep chimney service at home</span>
+          <span class="badge">Multi-brand: Elica, Faber, Hindware, Kaff, Bosch</span>
+        </div>
 
-    <!-- SERVICES LIST -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">Our Kitchen Chimney Services in Delhi</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      Hum kitchen me lagne wali almost har type ki chimney ke liye service dete hain – wall-mounted, auto-clean,
-      cassette filter, baffle filter, straight line, island chimney etc. Neeche hamari main
-      <strong>kitchen chimney service</strong> categories diye gaye hain:
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li><strong>Chimney repair service</strong> – no suction, heavy smoke, smell, light / button issue</li>
-      <li><strong>Chimney installation service</strong> – new &amp; re-installation with proper duct planning</li>
-      <li><strong>Chimney maintenance service</strong> – regular servicing &amp; performance check</li>
-      <li><strong>Chimney cleaning service</strong> – filter &amp; inside hood ki deep cleaning</li>
-      <li><strong>Chimney repair service at home</strong> – Delhi me doorstep visit</li>
-      <li><strong>Same day chimney repair</strong> – possible hua to same din work complete</li>
-      <li><strong>Chimney AMC service</strong> – yearly maintenance plan with multiple visits</li>
-    </ul>
-
-    <!-- MOTOR / DUCT / FILTER -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">Chimney Motor Repair, Duct Repair &amp; Filter Cleaning</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      Agar chimney se ajeeb noise aa raha ho, fan nahi ghoom raha ho ya smoke bilkul bahar nahi ja raha,
-      to ho sakta hai aapko <strong>chimney motor repair</strong> ya <strong>chimney duct repair</strong> ki zaroorat ho.
-      Saath hi greasy filters ko clean karna bhi zaroori hai jiske liye hum
-      <strong>chimney filter cleaning service</strong> provide karte hain.
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>Motor, fan &amp; shaft inspection for noise &amp; heating issues</li>
-      <li>Duct blockage check, leakage point check &amp; basic <strong>chimney duct repair</strong></li>
-      <li><strong>Chimney filter cleaning service</strong> – mesh / baffle filters se oil &amp; grease remove</li>
-    </ul>
-
-    <!-- BRAND SERVICES -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">Multi-Brand Kitchen Chimney Repair Service in Delhi</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      Hum multiple brands ke liye <strong>kitchen chimney repair near me</strong> type service provide karte hain.
-      Kuch common brand related services:
-    </p>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li><strong>Elica chimney repair service</strong> – error code, suction, noise &amp; PCB issues</li>
-      <li><strong>Faber chimney service center</strong> style doorstep support (independent multi-brand)</li>
-      <li><strong>Hindware chimney repair</strong> – low suction, switch panel &amp; lighting issues</li>
-      <li><strong>Kaff chimney service</strong> – auto-clean models &amp; standard kitchen chimneys</li>
-      <li><strong>Bosch chimney repair service</strong> – motor issues, duct connection &amp; installation support</li>
-    </ul>
-    <p style="font-size:12px; color:#6b7280; margin-top:4px;">
-      Note: Kitchen Fix kisi bhi brand ka authorised service centre nahi hai. Ye independent multi-brand
-      <strong>chimney repair service</strong> provider hai in Delhi.
-    </p>
-
-    <!-- INSTALLATION COST -->
-    <h2 style="font-size:20px; margin:18px 0 6px;">Kitchen Chimney Installation Service &amp; Installation Cost</h2>
-    <p style="font-size:13px; color:#374151; margin-bottom:8px;">
-      Nayi kitchen me chimney lagwani ho ya purani chimney ko shift karna ho, hum professional
-      <strong>chimney installation service</strong> provide karte hain. <strong>Kitchen chimney installation cost</strong>
-      aapke chimney model, wall height, ducting length aur site condition par depend karti hai. Aap direct
-      <strong>9643986012</strong> par call karke apne area ke liye installation charges confirm kar sakte hain.
-    </p>
-
-    <!-- COMMON PROBLEMS -->
-    <h3 style="font-size:16px; margin:18px 0 6px;">Common Chimney Problems We Repair</h3>
-    <ul style="font-size:13px; color:#374151; margin-left:18px; line-height:1.7;">
-      <li>Chimney suction kam ya smoke kitchen me hi rehna</li>
-      <li>Chimney se zyada noise / vibration aana</li>
-      <li>Chimney start nahi ho rahi, switch / PCB / button ka issue</li>
-      <li>Auto-clean function kaam nahi karna, filter oil se jam ho jana</li>
-      <li>Bad smell, oil dripping, light kaam na karna</li>
-    </ul>
-
-    <!-- AREAS WE COVER -->
-    <div style="margin-top:22px; padding:16px 12px; background:#0f172a; color:#e5e7eb; border-radius:8px;">
-      <h2 style="font-size:18px; margin-bottom:8px; text-align:center;">
-        Chimney Service Near Me – Areas We Cover in Delhi
-      </h2>
-      <p style="font-size:13px; text-align:center; margin-bottom:8px;">
-        Agar aap <strong>&quot;chimney service near me&quot;</strong> ya
-        <strong>&quot;kitchen chimney repair near me&quot;</strong> search kar rahe hain, to Kitchen Fix
-        Delhi ke bahut se residential areas me <strong>same day chimney repair service at home</strong>
-        provide karta hai. Hum Central, South, North, West aur East Delhi ke important locations cover karte hain:
-      </p>
-
-      <p style="font-size:13px; text-align:center; margin-bottom:8px;">
-        Connaught Place, Karol Bagh, Paharganj, Rajender Nagar, Civil Lines, Model Town, Burari,
-        Hauz Khas, Malviya Nagar, Greater Kailash I, Kalkaji, Vasant Kunj, Dwarka (Sector 1, 3, 6, 8,
-        11, 15, 18, 21, 24, 27, 29), Palam, Janakpuri, Uttam Nagar, Rajouri Garden, Tilak Nagar,
-        Punjabi Bagh, Paschim Vihar, Vikaspuri, Preet Vihar, Mayur Vihar Phase 1, Shahdara,
-        Krishna Nagar, Yamuna Vihar, Bhajanpura, Rohini (Sector 1, 4, 6, 8, 11, 13, 16, 19, 21, 24),
-        Pitampura, Shalimar Bagh, Ashok Vihar aur Keshavpuram jaisi locations me hum regular
-        <strong>chimney service in Delhi</strong> dete hain.
-      </p>
-
-      <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:12px; justify-content:center;">
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Connaught Place</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Karol Bagh</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Paharganj</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rajender Nagar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Civil Lines</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Model Town</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Burari</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Hauz Khas</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Malviya Nagar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Greater Kailash I</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Kalkaji</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Vasant Kunj</span>
-
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 1</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 3</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 6</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 8</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 11</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 15</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 18</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 21</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 24</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 27</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Dwarka Sector 29</span>
-
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Palam</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Janakpuri</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Uttam Nagar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rajouri Garden</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Tilak Nagar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Punjabi Bagh</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Paschim Vihar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Vikaspuri</span>
-
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Preet Vihar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Mayur Vihar Phase 1</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Shahdara</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Krishna Nagar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Yamuna Vihar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Bhajanpura</span>
-
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 1</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 4</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 6</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 8</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 11</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 13</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 16</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 19</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 21</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Rohini Sector 24</span>
-
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Pitampura</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Shalimar Bagh</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Ashok Vihar</span>
-        <span style="background:#111827; padding:6px 10px; border-radius:999px;">Keshavpuram</span>
+        <div class="hero-actions">
+          <a href="tel:+919643986012" class="btn-primary">📞 Call Now – 9643986012</a>
+          <a href="https://wa.me/919643986012" target="_blank" class="btn-secondary">💬 WhatsApp booking</a>
+        </div>
+        <div class="hero-note">
+          Popular searches we serve: <strong>chimney repair service near me</strong>,
+          <strong>kitchen chimney repair near me</strong>, <strong>chimney service near me</strong>,
+          <strong>same day chimney repair</strong>.
+        </div>
       </div>
 
-      <p style="font-size:13px; text-align:center; margin-top:10px;">
-        Agar aapka area list me nahi hai to bhi aap call ya WhatsApp karke chimney service slot confirm
-        kar sakte hain – hum maximum areas me <strong>same day chimney repair</strong> provide karne ki
-        koshish karte hain.
-      </p>
+      <!-- Side info card -->
+      <aside class="hero-side">
+        <div class="metric-label">Chimney focus</div>
+        <div class="metric-value">Doorstep Kitchen Chimney Service</div>
+        <div class="metric-sub">
+          Ideal for chimneys with low suction, heavy smoke, oil dripping, noise or error lights.
+        </div>
+
+        <div class="metric-tags">
+          <span class="metric-tag pill-soft">Chimney repair service at home</span>
+          <span class="metric-tag">Kitchen chimney installation cost guidance</span>
+          <span class="metric-tag">Chimney AMC service plans</span>
+        </div>
+
+        <div class="metric-label">Issues we commonly fix</div>
+        <div class="metric-sub">
+          Chimney not starting, buttons not working, heavy noise, smoke not going out, glass heating,
+          auto-clean not working and more.
+        </div>
+
+        <div class="hero-mini-note">
+          For quick booking, call or WhatsApp <strong>9643986012</strong> and mention your area in Delhi.
+        </div>
+      </aside>
     </div>
+  </section>
+
+  <main>
+
+    <!-- WHY CHOOSE -->
+    <section>
+      <div class="pill-heading">Why kitchen fix</div>
+      <h2>Why Choose Kitchen Fix for Chimney Repair Service in Delhi?</h2>
+      <p>
+        Kitchen Fix focuses on kitchen appliances, especially chimney and hob. Our team works on
+        chimneys daily, so we understand both technical repair and practical usage in Indian kitchens.
+        When you search for <strong>chimney repair service near me</strong>, we want to be the local
+        technician you can trust.
+      </p>
+
+      <div class="grid-3">
+        <div class="card card-soft">
+          <h3>Specialised chimney technicians</h3>
+          <p>
+            Our technicians primarily work on chimneys – not general electricians. This helps us diagnose
+            chimney problems faster and safer.
+          </p>
+          <ul>
+            <li>Hands-on experience with Indian cooking patterns</li>
+            <li>Understanding of baffle / mesh filter models</li>
+            <li>Careful handling of glass hoods and chimneys near cabinets</li>
+          </ul>
+        </div>
+
+        <div class="card card-soft">
+          <h3>Transparent charges &amp; advice</h3>
+          <p>
+            Before starting any <strong>kitchen chimney service</strong>, we explain what is wrong,
+            what is required and how much it may cost.
+          </p>
+          <ul>
+            <li>No unnecessary part replacement</li>
+            <li>Clear communication on labour and parts</li>
+            <li>Focus on repair, not just selling new chimney</li>
+          </ul>
+        </div>
+
+        <div class="card card-soft">
+          <h3>Safety &amp; cleanliness first</h3>
+          <p>
+            We know chimney work can get messy. Our team tries to protect the hob and counter while
+            performing <strong>chimney cleaning service</strong> or repair.
+          </p>
+          <ul>
+            <li>Basic cover for hob / cooktop area</li>
+            <li>Cleaning of visible oil from hood after work</li>
+            <li>Final demo of chimney operation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+      <div class="pill-heading">What we fix &amp; service</div>
+      <h2>Chimney Repair, Deep Cleaning, Installation &amp; AMC</h2>
+      <p>
+        Whether your chimney is noisy, not pulling smoke or simply overdue for a deep cleaning, Kitchen
+        Fix can help. We cover most typical <strong>kitchen chimney service</strong> needs for Delhi homes.
+      </p>
+
+      <div class="two-col">
+        <!-- Left column -->
+        <div class="card">
+          <h3>1. Chimney Repair Service at Home</h3>
+          <p>
+            For customers searching <strong>chimney repair service near me</strong> or
+            <strong>kitchen chimney repair near me</strong>, we provide doorstep chimney inspection and
+            repair.
+          </p>
+          <ul>
+            <li>Low or no suction, smoke staying inside kitchen</li>
+            <li>Chimney not starting, buttons or touch panel not working</li>
+            <li>Lights not working, strange noise or vibration</li>
+            <li>Glass heating too much or smell from chimney body</li>
+          </ul>
+
+          <h3>2. Chimney Deep Cleaning &amp; Maintenance</h3>
+          <p>
+            Chimneys collect a lot of sticky oil. Our <strong>chimney cleaning service</strong> aims to
+            improve suction and reduce smell.
+          </p>
+          <ul>
+            <li>Removal and cleaning of mesh / baffle filters</li>
+            <li>Cleaning of hood area and basic motor housing access</li>
+            <li>Basic <strong>chimney maintenance service</strong> checklist for safety</li>
+          </ul>
+        </div>
+
+        <!-- Right column -->
+        <div class="card">
+          <h3>3. Chimney Installation &amp; Re-Installation</h3>
+          <p>
+            Bought a new chimney or shifting to a new flat? Book
+            <strong>chimney installation service</strong> with Kitchen Fix.
+          </p>
+          <ul>
+            <li>New chimney wall mounting and alignment</li>
+            <li>Duct pipe routing, fixing and leakage check</li>
+            <li>Guidance on approximate <strong>kitchen chimney installation cost</strong> in Delhi</li>
+          </ul>
+
+          <h3>4. Chimney AMC Service (Annual Maintenance)</h3>
+          <p>
+            Regular cooking produces heavy oil and smoke. Our <strong>chimney AMC service</strong>
+            provides planned <strong>chimney maintenance service</strong> across the year.
+          </p>
+          <ul>
+            <li>Multiple service visits per year (plan-wise)</li>
+            <li>Deep cleaning of filters and hood</li>
+            <li>Performance &amp; safety checks for fan, motor and wiring</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Keyword cluster -->
+      <div class="service-keywords">
+        <span class="keyword-pill">chimney repair service</span>
+        <span class="keyword-pill">kitchen chimney service</span>
+        <span class="keyword-pill">chimney installation service</span>
+        <span class="keyword-pill">chimney maintenance service</span>
+        <span class="keyword-pill">chimney cleaning service</span>
+        <span class="keyword-pill">chimney servicing near me</span>
+        <span class="keyword-pill">kitchen chimney repair near me</span>
+        <span class="keyword-pill">chimney repair service at home</span>
+        <span class="keyword-pill">same day chimney repair</span>
+        <span class="keyword-pill">chimney AMC service</span>
+      </div>
+    </section>
+
+    <!-- MOTOR / DUCT / FILTER -->
+    <section>
+      <div class="pill-heading">Technical repair</div>
+      <h2>Chimney Motor Repair, Duct Repair &amp; Filter Cleaning</h2>
+      <p>
+        When the chimney is switched on but still not pulling enough smoke, the problem may be in the
+        motor, duct or filters. Kitchen Fix handles the core <strong>chimney motor repair</strong>,
+        <strong>chimney duct repair</strong> and <strong>chimney filter cleaning service</strong>.
+      </p>
+      <ul>
+        <li>Motor and fan inspection for noise, heating or low RPM</li>
+        <li>Duct blockage check, loose joints and basic leakage sealing</li>
+        <li>Baffle / mesh <strong>filter cleaning service</strong> to remove sticky oil and grease</li>
+      </ul>
+      <p>
+        For many customers, this is the exact solution when they search for
+        <strong>chimney servicing near me</strong> in Delhi.
+      </p>
+    </section>
+
+    <!-- BRAND SECTION -->
+    <section>
+      <div class="pill-heading">Multi-brand chimney service</div>
+      <h2>Elica, Faber, Hindware, Kaff, Bosch &amp; More</h2>
+      <p>
+        Kitchen Fix provides <strong>kitchen chimney repair near me</strong> style service for most
+        popular brands installed in Delhi homes. Instead of calling different centres, you can use one
+        team for multiple brands.
+      </p>
+
+      <div class="grid-3">
+        <div class="card card-soft">
+          <h3>Elica Chimney Repair Service</h3>
+          <p>
+            Support for wall-mounted and auto-clean Elica models – suction problems, touch panel issues,
+            filter cleaning and noise reduction.
+          </p>
+        </div>
+        <div class="card card-soft">
+          <h3>Faber Chimney Service</h3>
+          <p>
+            <strong>Faber chimney service centre</strong> style support at your doorstep – installation,
+            service and basic repair checks for Faber chimneys.
+          </p>
+        </div>
+        <div class="card card-soft">
+          <h3>Hindware, Kaff &amp; Bosch</h3>
+          <p>
+            <strong>Hindware chimney repair</strong>, <strong>Kaff chimney service</strong> and
+            <strong>Bosch chimney repair service</strong> handled as part of our multi-brand support,
+            along with several other chimney brands.
+          </p>
+        </div>
+      </div>
+
+      <p style="font-size:11px; margin-top:6px;">
+        Note: Kitchen Fix is an independent multi-brand chimney service provider. We are not an
+        authorised service centre of Elica, Faber, Hindware, Kaff, Bosch or any other manufacturer.
+        Brand names are used only to describe the type of <strong>chimney repair service</strong> we offer.
+      </p>
+    </section>
+
+    <!-- PROBLEMS + REVIEWS -->
+    <section>
+      <div class="two-col">
+        <!-- Common problems -->
+        <div>
+          <div class="pill-heading">Problems we fix</div>
+          <h2>Common Chimney Issues Our Technicians Solve</h2>
+          <p>
+            These are some of the day-to-day problems for which customers call us for
+            <strong>chimney repair service near me</strong> in Delhi:
+          </p>
+          <ul>
+            <li>Chimney running but smoke still in the kitchen</li>
+            <li>Heavy noise, vibration or rattling sounds from the hood</li>
+            <li>Chimney not starting, touch panel or buttons dead</li>
+            <li>Auto-clean function not working, filters fully choked</li>
+            <li>Oil dripping from chimney body or filters</li>
+            <li>Burnt smell or slight shock while touching metal parts</li>
+          </ul>
+          <p>
+            If you recognise any of these issues, call <strong>9643986012</strong> and request a visit
+            for <strong>kitchen chimney service</strong> at your address.
+          </p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews">
+          <h2 style="font-size:16px; margin-bottom:8px;">Customer Reviews – Chimney Service in Delhi</h2>
+
+          <div class="review">
+            <div class="review-name">Ritu Malhotra – Dwarka Sector 11</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              Our Elica chimney had almost stopped pulling smoke. I searched for
+              <strong>chimney repair service near me</strong> and found Kitchen Fix. The technician deep
+              cleaned the filters, checked the motor and now the chimney works like new.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Sandeep Singh – Janakpuri</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              The touch panel was not working at all. Kitchen Fix handled the entire
+              <strong>kitchen chimney repair</strong> at home and clearly explained the issue and cost
+              before starting the work.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Meenakshi – Rohini Sector 8</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              I booked their <strong>chimney cleaning service</strong> before Diwali. The team came on
+              time, cleaned the hood, filters and duct and also checked the noise problem. Very satisfied.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Arjun Verma – Malviya Nagar</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              Needed <strong>chimney installation service</strong> for a new Faber model. Installation
+              was neat and they also advised on the best duct route and approximate
+              <strong>kitchen chimney installation cost</strong>.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="review-name">Mrs. Bhatia – Paschim Vihar</div>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              We chose their <strong>chimney AMC service</strong> plan. Now they visit regularly for
+              <strong>chimney maintenance service</strong> so we do not have to worry about oil build-up
+              or sudden breakdowns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS -->
+    <section>
+      <div class="areas-box">
+        <div class="pill-heading">Service coverage</div>
+        <h2>Chimney Service Near Me – Areas We Cover in Delhi</h2>
+        <p>
+          Kitchen Fix provides <strong>chimney repair service at home</strong> in a large list of
+          residential areas across Delhi. If you live in or around the following locations you can
+          book <strong>chimney service near me</strong> with us.
+        </p>
+
+        <p>
+          Connaught Place, Karol Bagh, Paharganj, Rajender Nagar, Civil Lines, Model Town, Burari,
+          Hauz Khas, Malviya Nagar, Greater Kailash I, Kalkaji, Vasant Kunj, Dwarka (Sectors 1, 3, 6,
+          8, 11, 15, 18, 21, 24, 27, 29), Palam, Janakpuri, Uttam Nagar, Rajouri Garden, Tilak Nagar,
+          Punjabi Bagh, Paschim Vihar, Vikaspuri, Preet Vihar, Mayur Vihar Phase 1, Shahdara,
+          Krishna Nagar, Yamuna Vihar, Bhajanpura, Rohini (Sectors 1, 4, 6, 8, 11, 13, 16, 19, 21,
+          24), Pitampura, Shalimar Bagh, Ashok Vihar and Keshavpuram.
+        </p>
+
+        <div class="chips">
+          <span class="chip">Dwarka</span>
+          <span class="chip">Janakpuri</span>
+          <span class="chip">Paschim Vihar</span>
+          <span class="chip">Rohini</span>
+          <span class="chip">Pitampura</span>
+          <span class="chip">Malviya Nagar</span>
+          <span class="chip">Vasant Kunj</span>
+          <span class="chip">Greater Kailash</span>
+          <span class="chip">Connaught Place</span>
+          <span class="chip">Karol Bagh</span>
+          <span class="chip">Preet Vihar</span>
+          <span class="chip">Shahdara</span>
+        </div>
+
+        <p style="margin-top:8px;">
+          Even if your area is not listed, you can still call or WhatsApp us – we will confirm
+          whether <strong>chimney repair service near me in Delhi</strong> is available for your location.
+        </p>
+      </div>
+    </section>
 
     <!-- FINAL CTA -->
-    <p style="font-size:13px; margin-top:16px; text-align:center;">
-      Chimney repair, deep cleaning, maintenance, installation cost ya AMC plan ke liye
-      abhi call karein
-      <a href="tel:+919643986012" style="color:#111827; font-weight:bold; text-decoration:none;">
-        9643986012
-      </a>. Kitchen Fix aapka trusted <strong>chimney service wala</strong> aur
-      <strong>chimney repair service near me</strong> partner hai in Delhi.
-    </p>
+    <section>
+      <div class="pill-heading">Ready to book?</div>
+      <h2>Book Chimney Repair, Cleaning or Installation in Delhi</h2>
+      <p>
+        For any <strong>chimney repair service</strong>, <strong>kitchen chimney service</strong>,
+        <strong>chimney installation service</strong> or <strong>chimney AMC service</strong> in Delhi,
+        you can directly reach Kitchen Fix on:
+      </p>
+      <p><strong>📞 Call / WhatsApp: 9643986012</strong></p>
+      <p>
+        Share your chimney brand, problem and location. Our team will suggest the next available slot
+        for <strong>chimney repair service at home</strong> in your area.
+      </p>
+    </section>
+  </main>
 
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    Kitchen Fix – chimney repair service near me in Delhi • Independent multi-brand kitchen chimney service.
+  </footer>
 
   <!-- STICKY CONTACT BAR -->
-  <div style="position:fixed; bottom:0; left:0; right:0; background:#0f172a; color:#e5e7eb; padding:6px 10px; font-size:13px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; box-sizing:border-box;">
-    <div style="font-weight:500; margin-bottom:4px;">
-      Kitchen Fix – Chimney Repair &amp; Service in Delhi • Call / WhatsApp
+  <div class="contact-bar">
+    <div class="contact-label">
+      Kitchen Fix • Chimney Repair &amp; Service in Delhi
     </div>
-    <div>
-      <a href="tel:+919643986012" style="background:#fbbf24; color:#111827; padding:6px 10px; border-radius:999px; font-weight:bold; text-decoration:none; margin-right:6px;">📞 Call 9643986012</a>
-      <a href="https://wa.me/919643986012" target="_blank" style="border:1px solid #374151; padding:6px 10px; border-radius:999px; text-decoration:none; color:#e5e7eb;">💬 WhatsApp</a>
+    <div class="contact-actions">
+      <a href="tel:+919643986012" class="contact-call">📞 Call 9643986012</a>
+      <a href="https://wa.me/919643986012" target="_blank" class="contact-wa">💬 WhatsApp</a>
     </div>
   </div>
 
